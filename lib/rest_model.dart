@@ -72,7 +72,7 @@ class RestModel {
 
   static Future<List<Rest>> getRest(String? selectedCategory) async {
     final res = await http.post(
-      Uri.parse('http://192.168.211.36:30011/get_data'),
+      Uri.parse('http://192.168.1.105:30011/get_data'),
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8',
       },
